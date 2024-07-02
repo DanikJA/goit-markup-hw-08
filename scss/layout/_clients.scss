@@ -1,0 +1,38 @@
+.bottom-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+
+.clients-list {
+    display: flex;
+    padding: 0;
+    gap: 30px;
+}
+
+.clients-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--bottom-color);
+    border-radius: 4px;
+    fill: var(--bottom-color);
+
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+            border: 1px solid var(--blue);
+            fill: var(--blue);
+        }
+}
+

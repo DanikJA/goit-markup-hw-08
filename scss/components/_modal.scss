@@ -83,9 +83,6 @@
     display: block;
 }
 
-
-
-
 textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     width: 100%;
@@ -110,8 +107,6 @@ textarea {
             border: 1px solid var(--blue);
         }
 }
-
-
 
 .form-label__input:hover~.form-label__img,
 .form-label__input:focus~.form-label__img {
@@ -225,8 +220,6 @@ textarea {
             fill: var(--blue);
         }
 }
-
-
 
 textarea::placeholder {
     font-weight: 400;

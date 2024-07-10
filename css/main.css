@@ -809,9 +809,6 @@ textarea::placeholder {
 .feature-list {
   padding-top: 60px;
   padding-bottom: 60px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .feature-list {
@@ -1151,6 +1148,12 @@ textarea::placeholder {
       flex-wrap: wrap;
   padding: 0;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .clients-links {

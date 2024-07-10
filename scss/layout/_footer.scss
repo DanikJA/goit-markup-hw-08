@@ -1,13 +1,15 @@
 .footer {
     background: var(--hero-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    text-align: center;
+    padding: 60px 0px;  
 }
 
 .footer-address {
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    font-style: inherit;
+    color: var(--background-white);
 }
 
 .footer-address .address {
@@ -42,22 +44,21 @@
 }
 
 .container-footer {
-    display: flex;
+    display: block;
     align-items: baseline;
 }
 
-.footer-div1 {
-    flex-direction: column;
-    justify-content: center;
 
-}
 
 .footer-div2 {
     display: flex;
-    margin-left: 70px;
     align-items: baseline;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    
+    
 
 }
 
@@ -70,23 +71,17 @@
     letter-spacing: 0.03em;
     color: var(--background-white);
     margin-bottom: 20px;
-    padding: 0;
+    padding: 20px 0px 10px 0px;
     align-items: baseline;
-    flex-direction: column;
+    text-align: center;
 
-}
-
-.footer {
-    background: var(--hero-color);
-
-}
-
-.footer-address {
-    font-style: inherit;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--background-white);
+    @media (min-width: 768px) {
+            padding-bottom: 10px;
+        }
+    
+    @media (min-width: 1200px) {
+            text-align: left;
+        }
 }
 
 .bottom-links {
@@ -98,6 +93,8 @@
     border-radius: 50%;
     fill: var(--background-white);
     background-color: rgba(255, 255, 255, 0.1);
+    padding: 0;
+    margin-top: 0;
 
     transition-property: background-color;
     transition-duration: 250ms;
@@ -115,6 +112,8 @@
     padding: 0;
     fill: var(--background-white);
     gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footer-label {
@@ -130,7 +129,7 @@
 .footer-input {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    width: 358px;
+    width: 450px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: rgba(33, 150, 243, 0);
     padding: 15px 16px;
@@ -149,7 +148,7 @@
 }
 
 .footer-btn {
-    display: inline-flex;
+    align-items: center;
     border-radius: 4px;
     padding: 9px 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -162,7 +161,7 @@
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--background-white);
-    margin-left: 12px;
+    margin-top: 20px;
 }
 
 .footer-svg {
@@ -178,5 +177,8 @@
 }
 
 .footer-form {
-    margin-left: 93px;
+    display: block;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
 }

@@ -564,14 +564,16 @@ textarea::placeholder {
 
 .footer {
   background: var(--hero-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  text-align: center;
+  padding: 60px 0px;
 }
 
 .footer-address {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-style: inherit;
+  color: var(--background-white);
 }
 
 .footer-address .address {
@@ -605,29 +607,16 @@ textarea::placeholder {
 }
 
 .container-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.footer-div1 {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .footer-div2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 70px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -638,6 +627,10 @@ textarea::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
 }
 
 .footer-title {
@@ -649,26 +642,21 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   color: var(--background-white);
   margin-bottom: 20px;
-  padding: 0;
+  padding: 20px 0px 10px 0px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  text-align: center;
 }
-
-.footer {
-  background: var(--hero-color);
+@media (min-width: 768px) {
+  .footer-title {
+    padding-bottom: 10px;
+  }
 }
-
-.footer-address {
-  font-style: inherit;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--background-white);
+@media (min-width: 1200px) {
+  .footer-title {
+    text-align: left;
+  }
 }
 
 .bottom-links {
@@ -686,6 +674,8 @@ textarea::placeholder {
   border-radius: 50%;
   fill: var(--background-white);
   background-color: rgba(255, 255, 255, 0.1);
+  padding: 0;
+  margin-top: 0;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
@@ -705,6 +695,8 @@ textarea::placeholder {
   padding: 0;
   fill: var(--background-white);
   gap: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footer-label {
@@ -720,7 +712,7 @@ textarea::placeholder {
 .footer-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  width: 358px;
+  width: 450px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
@@ -739,9 +731,9 @@ textarea::placeholder {
 }
 
 .footer-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 4px;
   padding: 9px 40px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -755,7 +747,7 @@ textarea::placeholder {
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--background-white);
-  margin-left: 12px;
+  margin-top: 20px;
 }
 
 .footer-svg {
@@ -803,7 +795,14 @@ textarea::placeholder {
 }
 
 .footer-form {
-  margin-left: 93px;
+  display: block;
+  margin-top: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .feature-list {

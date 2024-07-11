@@ -625,24 +625,20 @@ textarea::placeholder {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px 165px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-footer {
+    gap: 60px 165px;
   }
 }
 @media (min-width: 1200px) {
   .container-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     text-align: left;
-    gap: 70px;
   }
 }
 
 .footer-div1 {
-  display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -660,7 +656,6 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 60px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -674,6 +669,11 @@ textarea::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .footer-div2 {
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-div2 {
@@ -791,6 +791,11 @@ textarea::placeholder {
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+  }
+}
 
 .footer-btn {
   display: -webkit-inline-box;
@@ -809,7 +814,11 @@ textarea::placeholder {
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--background-white);
-  margin-left: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-btn {
+    margin-left: 12px;
+  }
 }
 
 .footer-svg {
@@ -858,7 +867,6 @@ textarea::placeholder {
 
 .footer-form {
   display: block;
-  margin-top: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -873,6 +881,11 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .footer-form {
     margin-left: 93px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-form {
+    margin-top: 60px;
   }
 }
 

@@ -6,8 +6,6 @@
     @media screen and (max-width: 767px){
     text-align: center;
     }
-
-
 }
 
 .footer-address {
@@ -56,39 +54,35 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 30px 165px;
     }
+  
+@media screen and (min-width:768px) and (max-width:1199px){
+        gap:60px 165px;
+}
 
-    @media (min-width: 1200px) {
-        display: flex;
-        justify-content: center;
+@media (min-width: 1200px) {
         text-align: left;
-        gap: 70px;
     }
-
-        
-       
 }
 
 .footer-div1 {
-    display: block;
     flex-direction: column;
     justify-content: center;
     
-
     align-items: baseline;
     text-align: center;
-    
-
 }
 
 .footer-div2 {
     display: flex;
-    margin-top: 60px;
     align-items: baseline;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+@media screen and (max-width:767px) {
+        margin-top: 60px;
+    }
 
     @media screen and (min-width:1200px){
         margin-left: 70px;
@@ -195,10 +189,13 @@
     @media screen and (max-width:1199px) {
         margin-bottom: 20px;
     }
+
+     @media screen and (min-width:1200px) {
+        width: 358px;
+     }
+
+
 }
-
-
-
 
 .footer-btn {
     display: inline-flex;
@@ -214,7 +211,11 @@
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--background-white);
-    margin-left: 12px;
+   
+
+    @media screen and (min-width:1200px) {
+            margin-left: 12px;
+        }
 }
 
 .footer-svg {
@@ -233,7 +234,7 @@
 
 .footer-form{
         display: block;
-        margin-top: 60px;
+        
         justify-content: center;
         align-items: center;
 
@@ -242,5 +243,9 @@
 
         @media screen and (min-width:1200px) {
             margin-left: 93px;
+        }
+
+        @media screen and (max-width:767px) {
+            margin-top: 60px;
         }
 }

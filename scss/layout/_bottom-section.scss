@@ -20,27 +20,25 @@
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
-       
-      
-       @media screen and (min-width:480px) {
+
+     gap: 30px;
+
+
+}
+
+.bottom-section .img {
+    display: block;
+    @media screen and (min-width:480px) {
             width: 450px;
         }
     
         @media screen and (min-width:768px) {
-            width: 345px;
+            width: 354px;
         }
     
         @media screen and (min-width:1200px) {
             width: 270px;
         }
-
-         @media screen and (max-width: 479px) {
-            width: 270px;
-        }
-}
-
-.bottom-section .img {
-    display: block;
 }
 
 .bottom-section .bottom-div {

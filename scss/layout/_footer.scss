@@ -1,15 +1,19 @@
 .footer {
     background: var(--hero-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+      
+    @media screen and (max-width: 767px){
     text-align: center;
-    padding: 60px 0px;  
+    }
+
+
 }
 
 .footer-address {
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    font-style: inherit;
-    color: var(--background-white);
 }
 
 .footer-address .address {
@@ -32,10 +36,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-   &:hover,
-   &:focus {
-            color: var(--background-white);
-        }
+    &:hover,
+    &:focus {
+        color: var(--background-white);
+    }
 }
 
 .footer .footer-ul {
@@ -46,42 +50,87 @@
 .container-footer {
     display: block;
     align-items: baseline;
+  
+
+@media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px 165px;
+    }
+
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        gap: 70px;
+    }
+
+        
+       
 }
 
+.footer-div1 {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    
 
+    align-items: baseline;
+    text-align: center;
+    
+
+}
 
 .footer-div2 {
     display: flex;
+    margin-top: 60px;
     align-items: baseline;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    
-    
 
+    @media screen and (min-width:1200px){
+        margin-left: 70px;
+    }
 }
 
 .footer-title {
+    display: block;
+    padding: 0px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 20px;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--background-white);
+    padding: 0px;
+    align-items: baseline;
+    flex-direction: column;
     margin-bottom: 20px;
-    padding: 20px 0px 10px 0px;
+    
     align-items: baseline;
     text-align: center;
 
-    @media (min-width: 768px) {
-            padding-bottom: 10px;
-        }
     
-    @media (min-width: 1200px) {
-            text-align: left;
-        }
+         @media (min-width: 1200px) {
+                text-align: left;
+            }
+
+    
+}
+
+.footer {
+    background: var(--hero-color);
+
+}
+
+.footer-address {
+    font-style: inherit;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--background-white);
 }
 
 .bottom-links {
@@ -93,8 +142,6 @@
     border-radius: 50%;
     fill: var(--background-white);
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 0;
-    margin-top: 0;
 
     transition-property: background-color;
     transition-duration: 250ms;
@@ -102,8 +149,8 @@
 
     &:hover,
     &:focus {
-            background-color: var(--blue);
-        }
+        background-color: var(--blue);
+    }
 }
 
 .bottom-list {
@@ -112,8 +159,6 @@
     padding: 0;
     fill: var(--background-white);
     gap: 10px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .footer-label {
@@ -134,22 +179,29 @@
     background: rgba(33, 150, 243, 0);
     padding: 15px 16px;
     color: var(--background-white);
-    margin-bottom: 20px;
-
+    
+    
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-   &:hover,
-   &:focus {
-            outline: none;
-            border: 1px solid var(--background-white);
-        }
+    &:hover,
+    &:focus {
+        outline: none;
+        border: 1px solid var(--background-white);
+    }
+
+    @media screen and (max-width:1199px) {
+        margin-bottom: 20px;
+    }
 }
 
+
+
+
 .footer-btn {
-    align-items: center;
+    display: inline-flex;
     border-radius: 4px;
     padding: 9px 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -162,6 +214,7 @@
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--background-white);
+    margin-left: 12px;
 }
 
 .footer-svg {
@@ -176,9 +229,18 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-form {
-    display: block;
-    margin-top: 60px;
-    justify-content: center;
-    align-items: center;
+
+
+.footer-form{
+        display: block;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        align-items: baseline;
+        text-align: center;
+
+        @media screen and (min-width:1200px) {
+            margin-left: 93px;
+        }
 }

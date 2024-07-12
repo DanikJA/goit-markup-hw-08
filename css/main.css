@@ -519,17 +519,24 @@ textarea::placeholder {
 
 .section-hero__heading {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61538;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
   color: var(--background-white);
   margin-top: 0;
   margin-bottom: 30px;
-  width: 696px;
   margin-right: auto;
   margin-left: auto;
+  width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .section-hero__heading {
+    font-size: 44px;
+    line-height: 1.36364;
+    width: 696px;
+  }
 }
 
 .section-hero__button {
@@ -560,6 +567,13 @@ textarea::placeholder {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .section-hero__button {
+    padding: 10px 32px;
+    font-size: 16px;
+    min-width: 200px;
+  }
 }
 
 .footer {

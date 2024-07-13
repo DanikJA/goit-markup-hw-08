@@ -154,6 +154,12 @@ a {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1199px) {
+  .modal-wrapper {
+    width: 450px;
+    height: 609px;
+  }
+}
 
 .modal-wrapper__btn {
   display: -webkit-box;
@@ -248,6 +254,11 @@ textarea {
   outline: none;
   border: 1px solid var(--blue);
 }
+@media screen and (max-width: 1199px) {
+  .form-label__comment {
+    font-size: 14px;
+  }
+}
 
 .policy-label {
   display: -webkit-box;
@@ -261,6 +272,11 @@ textarea {
   line-height: 1.71429;
   letter-spacing: 0.03em;
   color: var(--grey-color);
+}
+@media screen and (max-width: 1199px) {
+  .policy-label {
+    font-size: 12px;
+  }
 }
 
 .policy-link {

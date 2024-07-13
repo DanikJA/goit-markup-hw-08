@@ -38,6 +38,11 @@
     transition: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width:1199px) {
+    width: 450px;
+    height: 609px;
+    }
 }
 
 .modal-wrapper__btn {
@@ -130,7 +135,13 @@ textarea {
             outline: none;
             border: 1px solid var(--blue);
         }
-}
+
+        @media screen and (max-width: 1199px){
+          font-size: 14px;
+        }
+
+        }
+
 
 .policy-label {
     display: flex;
@@ -140,6 +151,10 @@ textarea {
     line-height: 1.71429;
     letter-spacing: 0.03em;
     color: var(--grey-color);
+
+    @media screen and (max-width:1199px) {
+    font-size: 12px;
+    }
 }
 
 .policy-link {
@@ -160,6 +175,8 @@ textarea {
     transition-property: border-color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
 
 }
 

@@ -3,6 +3,17 @@
 
 }
 
+.web-studio{
+ display: block;
+ 
+ @media screen and (max-width:480px){
+   
+   padding-top: 16px;
+   padding-bottom: 16px;
+ }
+}
+
+
 .page-header {
     display: flex;
     align-items: center;
@@ -58,10 +69,18 @@
 
 .site-nav {
     display: flex;
+
+    @media screen and (max-width:480px){
+      display: none;
+    }
 }
 
 .site-second {
     display: flex;
+
+    @media screen and (max-width:480px) {
+    display: none;
+    }
 }
 
 .site-nav .item:not(:last-child) {

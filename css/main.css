@@ -402,6 +402,16 @@ textarea::placeholder {
   border-bottom: 1px solid #ececec;
 }
 
+.web-studio {
+  display: block;
+}
+@media screen and (max-width: 480px) {
+  .web-studio {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,11 +477,21 @@ textarea::placeholder {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 480px) {
+  .site-nav {
+    display: none;
+  }
+}
 
 .site-second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .site-second {
+    display: none;
+  }
 }
 
 .site-nav .item:not(:last-child) {

@@ -51,7 +51,6 @@ a {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -398,21 +397,6 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.open-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
-@media screen and (min-width: 480px) {
-  .open-btn {
-    display: none;
-  }
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -554,6 +538,33 @@ textarea::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 .section-hero {
@@ -1154,6 +1165,11 @@ textarea::placeholder {
 
 .bottom-section .img {
   display: block;
+}
+@media screen and (max-width: 479px) {
+  .bottom-section .img {
+    width: 270px;
+  }
 }
 @media screen and (min-width: 480px) {
   .bottom-section .img {

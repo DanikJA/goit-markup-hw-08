@@ -122,3 +122,33 @@
     fill: currentColor;
     justify-content: center;
 }
+
+
+
+                                                            //   menu-button
+
+.menu-button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+}
+
+ .menu-button .icon-cross{
+     display: none;
+ }
+
+ .menu-button.is-open .icon-cross{
+    display: block;
+ }
+
+ .menu-button.is-open .icon-menu{
+    display: none;
+ }
+
+ .menu-container{
+    margin-left: auto;
+    margin-right: 10px;
+ }

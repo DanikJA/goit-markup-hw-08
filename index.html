@@ -16,7 +16,7 @@
 
 </head>
                                     <!-- header-->
-<!-- 
+
     <header class="header"> 
      <div class="container page-header">
         <nav class="main-nav">
@@ -44,17 +44,23 @@
              +38 096 111 11 11</a>
             </li>
         </ul>
-        <button class="open-btn" js-open-menu aria-expanded="false"
-          aria-controls="mobile-menu">
-           <svg class="open-svg" width="24" height="24">
-            <use href="./іmages/sprite.svg#iconmenu_40px"></use>
-           </svg>
-        </button>
+        <div class="menu-container js-menu-container">
+            <button class="menu-button is-open" js-open-menu>
+                <svg class="open-svg" width="40" height="40" aria-label="переключатель мобільного меню">
+                    <use class="icon-menu" href="./іmages/sprite.svg#iconmenu_40px"></use>
+                    <use class="icon-cross" href="./іmages/sprite.svg#iconclose"></use>
+                </svg>
+            </button>
+
+
+
+        </div>
+       
     </div>
 
   
    
-    </header>  -->
+    </header> 
     
                                       
     
@@ -525,6 +531,7 @@
     
     
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     
     </body>
     

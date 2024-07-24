@@ -1466,21 +1466,47 @@ textarea::placeholder {
 }
 
 .cards-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .cards-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .cards-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .cards-section .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+  grid-gap: 8px;
+  grid-row-gap: 15px;
 }
-
-.cards-section .links-li:not(:last-child) {
-  margin-right: 8px;
+@media (min-width: 768px) {
+  .cards-section .links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .cards-section .links {
+    margin-bottom: 50px;
+  }
 }
 
 .cards-section .tagline {

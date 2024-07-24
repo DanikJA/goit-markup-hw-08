@@ -1,19 +1,41 @@
 
 .cards-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+     @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 
 .cards-section .links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    
+        grid-gap: 8px;
+        grid-row-gap: 15px;
+
+    @media (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
-.cards-section .links-li:not(:last-child) {
-    margin-right: 8px;
+.tagline{
+   
 }
-
 .cards-section .tagline {
     display: flex;
     flex-wrap: wrap;

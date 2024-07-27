@@ -88,6 +88,11 @@ a {
 .main-nav .web-studio {
   margin-right: 93px;
 }
+@media screen and (max-width: 767px) {
+  .main-nav .web-studio {
+    margin-right: 0px;
+  }
+}
 
 .footer .studio-footer {
   display: block;

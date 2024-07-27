@@ -13,6 +13,10 @@
 
 .main-nav .web-studio {
     margin-right: 93px;
+
+    @media screen and (max-width:767px){
+    margin-right:0px;
+    }
 }
 
 

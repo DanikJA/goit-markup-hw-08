@@ -103,6 +103,11 @@ a {
   color: var(--blue);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer .studio-footer {
+    text-align: left;
+  }
+}
 
 .footer .studio-footer > span {
   font-family: "Raleway", sans-serif;
@@ -311,7 +316,7 @@ textarea {
 .policy-label__input:checked {
   border-color: transparent;
   background-color: var(--blue);
-  background-image: url(../іmages/icon\ check.svg);
+  background-image: url(../../images/icon\ check.svg);
   background-size: contain;
   background-origin: border-box;
 }
@@ -576,6 +581,8 @@ textarea::placeholder {
   background: var(--hero-color);
   padding-top: 118px;
   padding-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mobile.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile.jpg");
   background-repeat: no-repeat;
@@ -693,9 +700,16 @@ textarea::placeholder {
 }
 
 .footer-address {
+  font-style: inherit;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--background-white);
+}
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    text-align: left;
+  }
 }
 
 .footer-address .address {
@@ -797,6 +811,9 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .footer-div2 {
     margin-left: 70px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -829,14 +846,6 @@ textarea::placeholder {
 
 .footer {
   background: var(--hero-color);
-}
-
-.footer-address {
-  font-style: inherit;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--background-white);
 }
 
 .bottom-links {
@@ -883,6 +892,11 @@ textarea::placeholder {
   text-transform: uppercase;
   color: var(--background-white);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-label {
+    text-align: left;
+  }
 }
 
 .footer-input {
@@ -1465,6 +1479,15 @@ textarea::placeholder {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: var(--blue);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -1507,6 +1530,15 @@ textarea::placeholder {
   font-size: 40px;
   letter-spacing: 0.02em;
   color: #212121;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu .link:hover, .mobile-menu .link:focus {
+  color: var(--blue);
 }
 
 .cards-section {

@@ -16,6 +16,7 @@
     transform: translateX(100%);
 }
 
+
 .menu-container.is-open {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -54,6 +55,15 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
+
+
+    &:hover,
+    &:focus {
+            fill: var(--blue);
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -97,4 +107,15 @@
     font-size: 40px;
     letter-spacing: 0.02em;
     color: #212121;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: var(--blue);
+    }
 }
+

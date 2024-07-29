@@ -8,12 +8,19 @@
     }
 }
 
+
+
 .footer-address {
+    font-style: inherit;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}
+    color: var(--background-white);
 
+    @media screen and (min-width: 1200px){
+        text-align:left;
+    }
+}
 .footer-address .address {
     margin-bottom: 9px;
 }
@@ -86,6 +93,7 @@
 
     @media screen and (min-width:1200px) {
         margin-left: 70px;
+        align-items: baseline;
     }
 }
 
@@ -117,14 +125,6 @@
 .footer {
     background: var(--hero-color);
 
-}
-
-.footer-address {
-    font-style: inherit;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--background-white);
 }
 
 .bottom-links {
@@ -163,6 +163,12 @@
     text-transform: uppercase;
     color: var(--background-white);
     margin-bottom: 20px;
+    
+
+
+@media screen and (min-width:1200px){
+    text-align: left;
+}
 }
 
 .footer-input {

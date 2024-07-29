@@ -31,6 +31,10 @@
     letter-spacing: 0.03em;
     color: var(--blue);
     margin-bottom: 20px;
+
+    @media screen and (min-width:1200px){
+        text-align: left;
+    }
 }
 
 .footer .studio-footer>span {

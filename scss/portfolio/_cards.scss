@@ -19,18 +19,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 40px;
-    
-        grid-gap: 8px;
-        grid-row-gap: 15px;
+    gap: 8px;
 
-    @media (min-width: 768px) {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  @media (min-width: 1200px) {
-    margin-bottom: 50px;
-  }
+    @media screen and (min-width:768px){
+        justify-content:center;
+    }
+    
 }
 
 .tagline{
@@ -41,8 +35,16 @@
     flex-wrap: wrap;
     padding-left: 0px;
     padding-right: 0px;
-    margin-top: 50px;
+    margin-top: 40px;
     gap: 30px;
+
+    @media screen and (min-width:768px){
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width:1200px){
+        margin-top: 50px;
+    }
 
 }
 

@@ -584,6 +584,7 @@ textarea::placeholder {
 .section-hero {
   background: var(--hero-color);
   padding-top: 118px;
+  padding-bottom: 118px;
   margin-right: auto;
   margin-left: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-mobile.jpg");
@@ -591,7 +592,6 @@ textarea::placeholder {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 400px;
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-hero {
@@ -626,7 +626,6 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .section-hero {
     max-width: 1600px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -1571,21 +1570,13 @@ textarea::placeholder {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 40px;
-  grid-gap: 8px;
-  grid-row-gap: 15px;
+  gap: 8px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .cards-section .links {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .cards-section .links {
-    margin-bottom: 50px;
   }
 }
 
@@ -1597,8 +1588,18 @@ textarea::placeholder {
       flex-wrap: wrap;
   padding-left: 0px;
   padding-right: 0px;
-  margin-top: 50px;
+  margin-top: 40px;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .cards-section .tagline {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards-section .tagline {
+    margin-top: 50px;
+  }
 }
 
 .cards-section .tagline-div {

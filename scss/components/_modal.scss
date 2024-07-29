@@ -29,19 +29,22 @@
     top: 50%;
     left: 50%;
     border-radius: 4px;
-    width: 528px;
-    height: 581px;
+    width: 450px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     background: var(--background-white);
     padding: 40px;
 
-    transition: transform;
+    transition: transform,width;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (max-width:1199px) {
-    width: 450px;
-    height: 609px;
+    @media screen and (min-width:1200px) {
+    width: 528px;
+    height: 581px;
+    }
+
+    @media screen and (max-width:479px){
+       width: 100%;
     }
 }
 

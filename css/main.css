@@ -1554,12 +1554,6 @@ textarea::placeholder {
     padding-bottom: 94px;
   }
 }
-@media screen and (max-width: 479px) {
-  .cards-section {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
 
 .cards-section .links {
   display: -webkit-box;
@@ -1570,13 +1564,37 @@ textarea::placeholder {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-bottom: 40px;
   gap: 8px;
+  row-gap: 15px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .cards-section .links {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .cards-section .links {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .gallery-images {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-images {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-images {
+    width: 370px;
   }
 }
 
@@ -1588,18 +1606,8 @@ textarea::placeholder {
       flex-wrap: wrap;
   padding-left: 0px;
   padding-right: 0px;
-  margin-top: 40px;
+  margin-top: 50px;
   gap: 30px;
-}
-@media screen and (min-width: 768px) {
-  .cards-section .tagline {
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .cards-section .tagline {
-    margin-top: 50px;
-  }
 }
 
 .cards-section .tagline-div {
@@ -1625,7 +1633,7 @@ textarea::placeholder {
 }
 
 .links .navigation {
-  font-family: "Roboto", sans-serif;
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;

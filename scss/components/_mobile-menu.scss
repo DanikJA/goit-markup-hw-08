@@ -14,6 +14,10 @@
     height: 100vh;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
+
+    @media screen and (max-width:479px){
+         padding-left: 30px;
+    }
 }
 
 
@@ -23,8 +27,7 @@
 }
 
 .mobile-menu :not(:last-child) {
-    margin-bottom: 35px;
-    
+    margin-bottom: 35px;  
 }
 
 .menu-list .menu-list_tell {
@@ -34,6 +37,10 @@
     letter-spacing: 0.02em;
     color: var(--blue);
     margin-bottom: 32px;
+
+    @media screen and (max-width:479px){
+       font-size: 30px;
+    }
 }
 
 .menu-list .menu-list_mail {
@@ -86,10 +93,18 @@
     line-height: 1.22222;
     letter-spacing: 0.02em;
     color: var(--blue);
+
+    @media screen and (max-width:479px){
+        font-size: 15px;
+    }
 }
 
 .mobile-menu_socials .socials_item:not(:last-child) {
     margin-right: 20px;
+
+    @media screen and (max-width:479px) {
+            margin-right: 9px;
+        }
 }
 
 .mobile-menu .link-current {

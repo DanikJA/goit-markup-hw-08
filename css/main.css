@@ -171,6 +171,7 @@ a {
 @media screen and (max-width: 479px) {
   .modal-wrapper {
     width: 100%;
+    padding-bottom: 20px;
   }
 }
 
@@ -285,10 +286,17 @@ textarea {
   line-height: 1.71429;
   letter-spacing: 0.03em;
   color: var(--grey-color);
+  position: relative;
 }
 @media screen and (max-width: 1199px) {
   .policy-label {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .policy-label {
+    font-size: 10px;
+    line-height: 1.11;
   }
 }
 
@@ -297,6 +305,14 @@ textarea {
   text-decoration: underline;
   color: var(--blue);
   margin-left: 5px;
+}
+@media screen and (max-width: 479px) {
+  .policy-link {
+    position: absolute;
+    top: 15px;
+    left: 23px;
+    margin: 0;
+  }
 }
 
 .policy-label__input {
@@ -1439,6 +1455,11 @@ textarea::placeholder {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
+@media screen and (max-width: 479px) {
+  .menu-container {
+    padding-left: 30px;
+  }
+}
 
 .menu-container.is-open {
   -webkit-transform: translateX(0);
@@ -1456,6 +1477,11 @@ textarea::placeholder {
   letter-spacing: 0.02em;
   color: var(--blue);
   margin-bottom: 32px;
+}
+@media screen and (max-width: 479px) {
+  .menu-list .menu-list_tell {
+    font-size: 30px;
+  }
 }
 
 .menu-list .menu-list_mail {
@@ -1515,9 +1541,19 @@ textarea::placeholder {
   letter-spacing: 0.02em;
   color: var(--blue);
 }
+@media screen and (max-width: 479px) {
+  .mobile-menu_socials .link {
+    font-size: 15px;
+  }
+}
 
 .mobile-menu_socials .socials_item:not(:last-child) {
   margin-right: 20px;
+}
+@media screen and (max-width: 479px) {
+  .mobile-menu_socials .socials_item:not(:last-child) {
+    margin-right: 9px;
+  }
 }
 
 .mobile-menu .link-current {

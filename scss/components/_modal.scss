@@ -32,9 +32,9 @@
     width: 450px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     background: var(--background-white);
-    padding: 40px;
+    padding:40px;
 
-    transition: transform,width;
+    transition:transform,width;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -45,6 +45,7 @@
 
     @media screen and (max-width:479px){
        width: 100%;
+       padding-bottom: 20px;
     }
 }
 
@@ -89,6 +90,7 @@
     color: var(--main-color);
     text-align: center;
     display: block;
+    
 }
 
 textarea {
@@ -154,10 +156,16 @@ textarea {
     line-height: 1.71429;
     letter-spacing: 0.03em;
     color: var(--grey-color);
+    position: relative;
 
     @media screen and (max-width:1199px) {
     font-size: 12px;
     }
+
+ @media screen and (max-width: 479px) {
+    font-size: 10px;
+    line-height: 1.11;     
+   }
 }
 
 .policy-link {
@@ -165,6 +173,13 @@ textarea {
     text-decoration: underline;
     color: var(--blue);
     margin-left: 5px;
+
+    @media screen and (max-width:479px){
+     position: absolute;
+     top: 15px;
+     left:23px;
+     margin:0;
+    }
 }
 
 .policy-label__input {

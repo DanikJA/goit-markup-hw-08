@@ -76,7 +76,7 @@ a {
   display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.03em;
   color: var(--blue);
 }
@@ -85,6 +85,11 @@ a {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 15px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .web-studio {
+    font-size: 26px;
   }
 }
 
@@ -120,6 +125,17 @@ a {
 .footer .studio-footer > span {
   font-family: "Raleway", sans-serif;
   color: var(--background-white);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-second .item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-second .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .backdrop {
@@ -530,12 +546,6 @@ textarea::placeholder {
   margin-right: 50px;
 }
 
-@media screen and (min-width: 1200px) {
-  .site-second .item {
-    margin-right: 50px;
-  }
-}
-
 .site-second {
   padding-bottom: 32px;
   padding-top: 32px;
@@ -574,24 +584,36 @@ textarea::placeholder {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-second .studio-link {
     display: block;
+    font-size: 12px;
   }
 }
 
-.site-second .item:not(:last-child) {
-  margin-bottom: 10px;
-}
-@media screen and (min-width: 1200px) {
-  .site-second .item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.icon {
+.icon-email {
   margin-right: 10px;
   fill: currentColor;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon-email {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.icon-phone {
+  margin-right: 10px;
+  fill: currentColor;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon-phone {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .section-hero {

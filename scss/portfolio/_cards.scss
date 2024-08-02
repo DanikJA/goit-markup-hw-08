@@ -38,8 +38,7 @@
 }
 
 .cards-section .tagline-item {
-flex-basis: auto;
-flex-grow: 1;
+
     @media screen and (min-width:480px) {
         width: 450px;
     }
@@ -51,10 +50,8 @@ flex-grow: 1;
     @media screen and (min-width:1200px) {
         width: 370px;
     }
- }
- .block-1 {
-  flex-grow: 2;
- }
+}
+
 
 
 .cards-section .gallery-images{

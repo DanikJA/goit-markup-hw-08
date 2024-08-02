@@ -1666,13 +1666,6 @@ textarea::placeholder {
   gap: 30px;
 }
 
-.cards-section .tagline-item {
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
 @media screen and (min-width: 480px) {
   .cards-section .tagline-item {
     width: 450px;
@@ -1687,12 +1680,6 @@ textarea::placeholder {
   .cards-section .tagline-item {
     width: 370px;
   }
-}
-
-.block-1 {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
 }
 
 @media screen and (min-width: 480px) {

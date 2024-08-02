@@ -1666,6 +1666,9 @@ textarea::placeholder {
   gap: 30px;
 }
 
+.cards-section .tagline-item {
+  width: 100%;
+}
 @media screen and (min-width: 480px) {
   .cards-section .tagline-item {
     width: 450px;
@@ -1682,6 +1685,9 @@ textarea::placeholder {
   }
 }
 
+.cards-section .gallery-images {
+  width: 100%;
+}
 @media screen and (min-width: 480px) {
   .cards-section .gallery-images {
     width: 450px;

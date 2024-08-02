@@ -1668,6 +1668,11 @@ textarea::placeholder {
 
 .cards-section .tagline-item {
   width: 100%;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 @media screen and (min-width: 480px) {
   .cards-section .tagline-item {
@@ -1683,6 +1688,12 @@ textarea::placeholder {
   .cards-section .tagline-item {
     width: 370px;
   }
+}
+
+.block-1 {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .cards-section .gallery-images {
@@ -1709,6 +1720,13 @@ textarea::placeholder {
   border-right: 1px solid var(--border-white);
   border-bottom: 1px solid var(--border-white);
   padding: 20px 24px;
+}
+
+.tagline-addition {
+  border-left: 1px solid var(--border-white);
+  border-right: 1px solid var(--border-white);
+  border-bottom: 1px solid var(--border-white);
+  padding: 20px 24px 56px;
 }
 
 .links .navigation-first {

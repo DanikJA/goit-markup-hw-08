@@ -88,7 +88,11 @@ width: 100%;
     border-left: 1px solid var(--border-white);
     border-right: 1px solid var(--border-white);
     border-bottom: 1px solid var(--border-white);
+    padding: 20px 24px;
+
+ @media screen and (min-width:768px) and (max-width:1199px){
     padding: 20px 24px 56px;
+ }
 }
 
 .links .navigation-first {

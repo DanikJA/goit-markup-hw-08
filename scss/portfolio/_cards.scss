@@ -38,9 +38,6 @@
 
 .cards-section .tagline-item {
     width: 100%;
-    flex-basis: auto;
-    flex-grow: 1;
-
 
     @media screen and (min-width:480px) {
         width: 450px;
@@ -55,9 +52,9 @@
     }
 }
 
-.block-1{
-    flex-grow: 2;
-}
+// .block-1{
+//     flex-grow: 2;
+// }
 
 
 

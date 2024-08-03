@@ -1711,16 +1711,10 @@ textarea::placeholder {
   padding: 20px 24px;
 }
 
-.tagline-addition {
-  border-left: 1px solid var(--border-white);
-  border-right: 1px solid var(--border-white);
-  border-bottom: 1px solid var(--border-white);
-  padding: 20px 24px;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tagline-addition {
-    padding: 20px 24px 56px;
-  }
+.addition {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .links .navigation-first {
@@ -1791,7 +1785,14 @@ textarea::placeholder {
 }
 
 .list-links {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
